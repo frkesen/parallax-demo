@@ -82,6 +82,7 @@ html {
   outline: 0.5rem inset purple;
   outline-offset: 1rem;
   text-transform: uppercase;
+  line-height: 5rem;
 }
 
 .heading-container__heading--small {
@@ -108,4 +109,52 @@ html {
 .section--dark {
   background-color: #282e34;
   color: #ddd;
+}
+
+@media (max-width: 760px) {
+  .heading-container {
+    font-size: 2rem;
+  }
+  .heading-container__heading--big {
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    outline: 0.4rem inset purple;
+    outline-offset: 0.6rem;
+    line-height: 2.5rem;
+  }
+  .heading-container__heading--small {
+    border: 1.5rem;
+    padding: 0.4rem;
+    border-top-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    outline: 0.2rem inset purple;
+    outline-offset: 0.1rem;
+    line-height: 2.4rem;
+  }
+  .section {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .heading-container {
+    font-size: 1.5rem;
+  }
+  .heading-container__heading--big {
+    padding: 0.5rem;
+    line-height: 2rem;
+  }
+  .heading-container__heading--small {
+    line-height: 2rem;
+  }
+  .section {
+    font-size: 0.8rem;
+  }
+  .background-container--image1,
+  .background-container--image2,
+  .background-container--image3,
+  .background-container--image4 {
+    background-attachment: scroll;
+  }
 }
